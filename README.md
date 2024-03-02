@@ -95,3 +95,7 @@ The response body has the following format:
 This endpoint assigns new clients to facilities, respecting their possible demand restrictions and service areas.
 
 [TODO]
+
+## Postman Documentation:
+
+[https://documenter.getpostman.com/view/32527568/2sA2rGte4D](https://documenter.getpostman.com/view/32527568/2sA2rGte4D)
