@@ -3,8 +3,8 @@
     "name": "Queimados",
     "lat": -22.718469923546557,
     "lng": -43.557522363603965,
-    "maxDemand": 0,
     "minDemand": 0,
+    "maxDemand": 0,
     "exclusiveServiceArea": {
       "coordinates": [
         [
@@ -30,8 +30,8 @@
     "name": "Taquara",
     "lat": -22.926906505832797,
     "lng": -43.37529188925756,
-    "maxDemand": 0,
     "minDemand": 5000,
+    "maxDemand": 0,
     "exclusiveServiceArea": {
       "type": "FeatureCollection",
       "features": [
@@ -68,8 +68,8 @@
     "name": "Niterói",
     "lat": -22.89316296671597,
     "lng": -43.12072381168357,
-    "maxDemand": 0,
     "minDemand": 3000,
+    "maxDemand": 0,
     "exclusiveServiceArea": {
       "type": "MultiPolygon",
       "coordinates": [
