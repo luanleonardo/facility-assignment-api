@@ -6,6 +6,9 @@ The solution process has two phases. Firstly, the planning phase, where service 
 
 Base URL: [https://facility-assignment-api.onrender.com](https://facility-assignment-api.onrender.com)
 
+![Peek 2024-03-02 17-32](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/e9cce042-cf76-4d35-898f-8546263ae197)
+
+
 ## POST v1/solve-assignment
 > https://facility-assignment-api.onrender.com/v1/solve-assignment
 
