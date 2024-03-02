@@ -29,6 +29,7 @@ Three **`objective`** functions can be selected:
 
 1. **Minimize proximity** (`"objective": 1`): the proximity between facilities and clients will be minimized, proximity will be calculated using the spherical distance between them.
 2. **Minimize travel distance** (`"objective": 2`): the street travel distance using a car between logistics facilities and clients will be minimized. The _Open Source Routing Machine (OSRM)_ server will be queried to obtain travel distances between logistics facilities and clients.
+3. **Minimize travel duration** (`"objective": 3`): the street travel duration using a car between logistics facilities and clients will be minimized. The _Open Source Routing Machine (OSRM)_ server will be queried to obtain travel durations between logistics facilities and clients.
     
 
 By default the objective will be to minimize proximity. The other objectives are time consuming as they depend on the availability of open resources of the OSRM service.
