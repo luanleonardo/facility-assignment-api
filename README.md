@@ -3,7 +3,7 @@
 
 This API offers a solution process for the Online Facility Assignment problem applied to Logistics. Given a set of logistics facilities capable of meeting the demands of end clients, the goal is to devise a policy for assigning each client to a logistics facility, thereby minimizing the total proximity (or total travel distance, or total travel duration) between them while adhering to potential constraints related to demand and exclusive service areas of the facilities.
 
-The solution process has two phases. Firstly, the planning phase, where service areas are constructed for each logistics facility while respecting their possible demand constraints and exclusive service areas, while minimizing the objective function. Then, the execution phase, where new client demands are processed in real-time, directing the client to the facility with the nearest service area to them.
+The proposed solution process has two phases. Firstly, the planning phase, where service areas are constructed for each logistics facility while respecting their possible demand constraints and exclusive service areas, while minimizing the objective function. Then, the execution phase, where new client demands are processed in real-time, directing the client to the facility with the nearest service area to them.
 
 ## Reference
 > Matheus Suknaic; Fillipe Goulart; Juan Camilo. A Territory-based Approach for the Facility Assignment Problem with a Minimum Cost Formulation. In: ANAIS DO SIMPóSIO BRASILEIRO DE PESQUISA OPERACIONAL, 2022, Juiz de Fora. Anais eletrônicos... Campinas, Galoá, 2022. Disponível em: <https://proceedings.science/sbpo/sbpo-2022/trabalhos/a-territory-based-approach-for-the-facility-assignment-problem-with-a-minimum-co?lang=pt-br> Acesso em: 02 mar. 2024.
@@ -50,7 +50,7 @@ The request body must have the following format:
          "minDemand":"<non negative integer for facility minimum demand> [optional]",
          "maxDemand":"<non negative integer for facility maximum demand> [optional]",
          "exclusiveServiceArea":"<Geojson of polygons/multipolygons for facility exclusive service area> [optional]"
-      }
+      },
       ...
    ],
    "clients":[
@@ -59,7 +59,7 @@ The request body must have the following format:
          "lat":"<float for location latitude coordinate>",
          "lng":"<float for location longitude coordinate>",
          "demand":"<positive float for the client demand> [optional]"
-      }
+      },
       ...
    ]
 }
