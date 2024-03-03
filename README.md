@@ -92,8 +92,8 @@ The response body has the following format:
 
 [TODO]
 
-## POST v1/assign-clients
-> https://facility-assignment-api.onrender.com/v1/assign-clients
+## POST v1/client-assignment
+> https://facility-assignment-api.onrender.com/v1/client-assignment
 
 ##### Execution phase.
 
