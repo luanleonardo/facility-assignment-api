@@ -1,4 +1,4 @@
-# Facility Assignment API
+# Online Facility Assignment API
 
 
 This API offers a solution process for the Online Facility Assignment problem applied to Logistics. Given a set of logistics facilities capable of meeting the demands of end clients, the goal is to devise a policy for assigning each client to a logistics facility, thereby minimizing the total proximity (or total travel distance, or total travel duration) between them while adhering to potential constraints related to demand and exclusive service areas of the facilities.
