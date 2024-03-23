@@ -21,7 +21,7 @@ Assignment problem models:
 
 This endpoint assigns new clients to the facilities, respecting their possible demand constraints and the service areas defined in the planning phase.
 
-All theoretical foundation was inspired by an article written by my dear friends Matheus Suknaic, Fillipe Goulart, and Juan Camilo Fonseca Galindo, which can be found in the reference:
+All theoretical foundation can be found in the reference:
 
 ## Reference
 > Matheus Suknaic; Fillipe Goulart; Juan Camilo. A Territory-based Approach for the Facility Assignment Problem with a Minimum Cost Formulation. In: ANAIS DO SIMPóSIO BRASILEIRO DE PESQUISA OPERACIONAL, 2022, Juiz de Fora. Anais eletrônicos... Campinas, Galoá, 2022. Disponível em: <https://proceedings.science/sbpo/sbpo-2022/trabalhos/a-territory-based-approach-for-the-facility-assignment-problem-with-a-minimum-co?lang=pt-br> Acesso em: 02 mar. 2024.
