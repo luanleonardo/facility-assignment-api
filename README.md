@@ -1,9 +1,27 @@
 # Online Facility Assignment API
 
+The main objective is to efficiently assign client demands, which arrive in real-time and stochastically, to logistic facilities. This is done by minimizing the total proximity (or total travel distance, or total travel time) between the facilities and the clients, while respecting possible minimum or maximum demand constraints and exclusive service areas of each logistic facility.
 
-This API offers a solution process for the Online Facility Assignment problem applied to Logistics. Given a set of logistics facilities capable of meeting the demands of end clients, the goal is to devise a policy for assigning each client to a logistics facility, thereby minimizing the total proximity (or total travel distance, or total travel duration) between them while adhering to potential constraints related to demand and exclusive service areas of the facilities.
+The REST API, developed with FastAPI, provides endpoints to solve the problem in two phases:
 
-The proposed solution process has two phases. Firstly, the planning phase, where service areas are constructed for each logistics facility while respecting their possible demand constraints and exclusive service areas, while minimizing the objective function. Then, the execution phase, where new client demands are processed in real-time, directing the client to the facility with the nearest service area to them.
+**Planning Phase:** `POST v1/solve-assignment`
+
+Using historical client demand data, the endpoint solves the problem of assigning clients to logistic facilities, respecting possible demand constraints and exclusive service areas, all while minimizing the objective function. From this assignment, the service areas of each logistic facility are constructed.
+
+The assignment problem was modeled in two ways: as a minimum cost flow problem and using mixed-integer linear programming (MILP). For the minimum cost flow modeling, I used OR-Tools with its solver based on the push-relabel algorithm. For MILP modeling, I turned to Pyomo and the HiGHS solver, known for its high performance. In defining the service areas, I used a convex hull algorithm that I developed and is available for use on PyPI under the name [uhull](https://github.com/luanleonardo/uhull).
+
+Assignment problem models:
+
+1. **Minimum cost flow**
+2. **Mixed integer linear programming**
+
+   ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/68a4d57a-76ca-4572-a9d2-75ada02b7f71)
+
+**Execution Phase:** `POST v1/client-assignment`
+
+This endpoint assigns new clients to the facilities, respecting their possible demand constraints and the service areas defined in the planning phase.
+
+All theoretical foundation was inspired by an article written by my dear friends Matheus Suknaic, Fillipe Goulart, and Juan Camilo Fonseca Galindo, which can be found in the reference:
 
 ## Reference
 > Matheus Suknaic; Fillipe Goulart; Juan Camilo. A Territory-based Approach for the Facility Assignment Problem with a Minimum Cost Formulation. In: ANAIS DO SIMPóSIO BRASILEIRO DE PESQUISA OPERACIONAL, 2022, Juiz de Fora. Anais eletrônicos... Campinas, Galoá, 2022. Disponível em: <https://proceedings.science/sbpo/sbpo-2022/trabalhos/a-territory-based-approach-for-the-facility-assignment-problem-with-a-minimum-co?lang=pt-br> Acesso em: 02 mar. 2024.
@@ -21,11 +39,6 @@ The **`algorithm`** for solving the problem of assigning clients to facilities c
 
 1. **Minimum cost flow** (`"algorithm": 1`)
 2. **Mixed integer linear programming** (`"algorithm": 2`)
-
-   ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/68a4d57a-76ca-4572-a9d2-75ada02b7f71)
-
-
-
 
 By default, the minimum cost flow algorithm will be used as it is a faster algorithm and presents the same solution quality as the MILP algorithm.
 
