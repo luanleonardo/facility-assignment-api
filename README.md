@@ -22,7 +22,8 @@ The **`algorithm`** for solving the problem of assigning clients to facilities c
 1. **Minimum cost flow** (`"algorithm": 1`)
 2. **Mixed integer linear programming** (`"algorithm": 2`)
 
-   ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/0be5df0d-c36b-4099-af3a-53ddd5b4115f)
+   ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/68a4d57a-76ca-4572-a9d2-75ada02b7f71)
+
 
 
 
