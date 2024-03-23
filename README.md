@@ -21,7 +21,10 @@ The **`algorithm`** for solving the problem of assigning clients to facilities c
 
 1. **Minimum cost flow** (`"algorithm": 1`)
 2. **Mixed integer linear programming** (`"algorithm": 2`)
-    
+
+   ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/0be5df0d-c36b-4099-af3a-53ddd5b4115f)
+
+
 
 By default, the minimum cost flow algorithm will be used as it is a faster algorithm and presents the same solution quality as the MILP algorithm.
 
