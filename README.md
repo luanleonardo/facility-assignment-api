@@ -31,8 +31,6 @@ All theoretical foundation can be found in the reference:
 ## POST v1/solve-assignment
 > https://facility-assignment-api.onrender.com/v1/solve-assignment
 
-##### Planning phase
-
 This endpoint solves the problem of assigning clients to facilities and constructs the service areas of each logistics facility, respecting their possible demand restrictions and exclusive service areas, minimizing the objective function.
 
 The **`algorithm`** for solving the problem of assigning clients to facilities can be:
@@ -107,12 +105,8 @@ The response body has the following format:
 
  ```
 
-[TODO]
-
 ## POST v1/client-assignment
 > https://facility-assignment-api.onrender.com/v1/client-assignment
-
-##### Execution phase.
 
 This endpoint assigns new clients to facilities, respecting their possible demand restrictions and service areas.
 
