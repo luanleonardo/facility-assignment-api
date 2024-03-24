@@ -13,7 +13,10 @@ The assignment problem was modeled in two ways: as a minimum cost flow problem a
 Assignment problem models:
 
 1. **Minimum cost flow**
-2. **Mixed integer linear programming**
+
+   ![mcf_formulation](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/8652879f-0043-4b0d-a9a2-329f939413ea)
+
+3. **Mixed integer linear programming**
 
    ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/68a4d57a-76ca-4572-a9d2-75ada02b7f71)
 
