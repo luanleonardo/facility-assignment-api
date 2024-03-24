@@ -14,7 +14,7 @@ Assignment problem models:
 
 1. **Minimum cost flow**
 
-   ![mcf_formulation](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/8652879f-0043-4b0d-a9a2-329f939413ea)
+   ![min_cost_flow_formulation_page-0001](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/edb45069-a9ae-47f2-a747-654c2ee1125e)
 
 3. **Mixed integer linear programming**
 
