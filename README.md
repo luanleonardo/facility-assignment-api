@@ -14,11 +14,11 @@ Assignment problem models:
 
 1. **Minimum cost flow**
 
-   ![mcf](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/491a0211-5c27-41c2-b14f-9a28aacfe012)
+   ![min_cost_flow_formulation_page-0001](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/b747c8ce-8479-4c58-8386-8e43515259e6)
 
 3. **Mixed integer linear programming**
 
-   ![milp](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/f73b8402-023a-4c47-b9aa-fed8f0cc5cf2)
+   ![integer_programming_formulation_page-0001](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/c85156ac-ef38-4ce2-a23a-76a9b9975c00)
 
 **Execution Phase:** `POST v1/client-assignment`
 
