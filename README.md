@@ -18,7 +18,7 @@ Assignment problem models:
 
 3. **Mixed integer linear programming**
 
-   ![image](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/68a4d57a-76ca-4572-a9d2-75ada02b7f71)
+   ![integer_programming_formulation_page-0001](https://github.com/luanleonardo/facility-assignment-api/assets/33757982/707f3b12-8d07-4b74-8803-0eb67798c8ea)
 
 **Execution Phase:** `POST v1/client-assignment`
 
