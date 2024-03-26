@@ -8,7 +8,7 @@ The REST API, developed with [FastAPI](https://github.com/tiangolo/fastapi), pro
 
 Using historical client demand data, the endpoint solves the problem of assigning clients to logistic facilities, respecting possible demand constraints and exclusive service areas, all while minimizing the objective function. From this assignment, the service areas of each logistic facility are constructed.
 
-The assignment problem was modeled in two ways: as a minimum cost flow problem and using mixed-integer linear programming (MILP). For the minimum cost flow modeling, I used [OR-Tools](https://developers.google.com/optimization/flow/assignment_min_cost_flow) with its solver based on the push-relabel algorithm. For MILP modeling, I turned to Pyomo and the [HiGHS](https://github.com/ERGO-Code/HiGHS) solver, known for its high performance. In defining the service areas, I used a concave hull algorithm that I developed and is available for use on PyPI under the name [uhull](https://github.com/luanleonardo/uhull).
+The assignment problem was modeled in two ways: as a minimum cost flow problem and using mixed-integer linear programming (MILP). For the minimum cost flow modeling, I used [OR-Tools](https://developers.google.com/optimization/flow/assignment_min_cost_flow) with its solver based on the push-relabel algorithm. For MILP modeling, I turned to [Pyomo](https://www.pyomo.org/) and the [HiGHS](https://github.com/ERGO-Code/HiGHS) solver, known for its high performance. In defining the service areas, I used a concave hull algorithm that I developed and is available for use on PyPI under the name [uhull](https://github.com/luanleonardo/uhull).
 
 Assignment problem models:
 
