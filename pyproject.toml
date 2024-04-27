@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "Facility Assingment API"
+version = "0.1.0"
+description = "Backend"
+authors = ["Luan Leonardo <llvdmoraes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+fastapi = "^0.109.2"
+uvicorn = {extras = ["standard"], version = "^0.27.0.post1"}
+numpy = "^1.26.4"
+shapely = "^2.0.2"
+pyhumps = "^3.8.0"
+dynaconf = "^3.2.4"
+requests = "^2.31.0"
+pyomo = "^6.7.0"
+highspy = "^1.5.3"
+ortools = "^9.8.3296"
+uhull = "^0.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+isort = "^5.13.2"
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+mypy = "^1.8.0"
+autopep8 = "^2.0.4"
+flake8 = "^7.0.0"
+ipython = "^8.21.0"
+types-requests = "^2.31.0.20240125"
+mock = "^5.1.0"
+types-mock = "^5.1.0.20240106"
+httpx = "^0.27.0"
+
+[tool.autopep8]
+max_line_length = 79
+
+[tool.black]
+line-length = 79
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
