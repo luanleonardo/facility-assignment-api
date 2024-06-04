@@ -1,6 +1,4 @@
 # isort: skip_file
-from .cost_calculator.spherical_cost import spherical_cost_matrix  # noqa: F401
-from .cost_calculator.osrm_costs import osrm_cost_matrix  # noqa: F401
 from .cost_calculator.cost_matrix import compute_cost_matrix  # noqa: F401
 from .assignment_evaluator.clients_dispersion import (  # noqa: F401
     solve_clients_dispersion_problem,

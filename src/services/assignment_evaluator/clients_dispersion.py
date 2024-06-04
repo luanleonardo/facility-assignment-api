@@ -12,10 +12,10 @@ solve the p-dispersion problem.
 
 from typing import List
 
+import cost_matrix
 import numpy as np
 
 from src.models import Client
-from src.services import spherical_cost_matrix
 
 
 def solve_clients_dispersion_problem(
@@ -53,7 +53,7 @@ def solve_clients_dispersion_problem(
     client_locations = np.array(
         [(client.lat, client.lng) for client in clients]
     )
-    distance_matrix = spherical_cost_matrix(client_locations, client_locations)
+    distance_matrix = cost_matrix.spherical(client_locations, client_locations)
 
     # Begin adding the farthest pair
     selected_indices = list(
