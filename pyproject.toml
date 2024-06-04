@@ -18,6 +18,7 @@ pyomo = "^6.7.0"
 highspy = "^1.5.3"
 ortools = "^9.8.3296"
 uhull = "^0.1.2"
+cost-matrix = "^0.1.1"
 
 
 [tool.poetry.group.dev.dependencies]
